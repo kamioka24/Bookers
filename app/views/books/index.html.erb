@@ -1,2 +1,27 @@
-<h1>Books</h1>
-<p>Title</p><p>Body</p>
+<main>
+	<h1 class="main-title">Books</h1>
+	<% @books.each do |book| %>
+		<p>Title</p>
+		<%= book.title %>
+		<p>Body</p>
+		<%= book.body %>
+		<p><%= link_to "Show", book_path(book) %>
+		<%= link_to "Edit", edit_book_path(book) %>
+		<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %></p> <!--要質問-->
+	<% end %>
+
+
+	<h2>New book</h2>
+
+	<%= form_for(@book) do |f| %>
+
+		<h4>Title</h4>
+		<%= f.text_field :title %>
+
+		<h4>Body</h4>
+		<%= f.text_area :body %>
+
+		<p class="update"><%= f.submit 'Create Book'%></p>
+
+	<% end %>
+</main>

@@ -1,3 +1,16 @@
-// Place all the styles related to the books controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+main {
+	margin: 30px;
+	font-family: verdana, arial, helvetica,
+}
+
+h1, h2, h4 {
+	color: #333;
+}
+
+.main-title {
+	font-size: 25px;
+}
+
+.update {
+	color: green;
+}
