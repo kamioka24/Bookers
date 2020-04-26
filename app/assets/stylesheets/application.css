@@ -1,16 +1,62 @@
 main {
-	margin: 30px;
+	margin: 25px;
+	text-align: left;
 }
 
-h1, h2, h4 {
+h1, h2, h4, th, td, .form, span {
 	font-family: verdana, arial, helvetica;
 	color: #333;
 }
 
-.main-title {
-	font-size: 25px;
+h2 {
+	font-size: 20px;
 }
 
-.update {
+span {
+	font-weight: bold;
+}
+
+.main-title {
+	font-size: 26px;
+}
+
+.main-topic, .show {
+	color: #333;
+	padding-left: 30px;
+	padding-bottom: 15px;
+	font-size: 13px;
+}
+
+th {
+	text-align: center;
+	font-size: 13px;
+	padding-bottom: 8px;
+}
+
+td {
+	font-size: 13px;
+	padding-bottom: 6px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.form {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.btn {
+	font-size: 13px;
+	padding-left: 30px;
+}
+
+.show-btn, .edit-btn {
+	font-size: 13px;
+}
+
+.created, .destroyed {
 	color: green;
+	font-size: 13px;
+	margin-left: 30px;
+	padding-bottom: 10px;
 }
